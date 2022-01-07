@@ -1,9 +1,11 @@
-FILENAME=blink
-DEVICE=atmega328p
 PROGRAMMER=arduino
 COMPILE=avr-gcc -Wall -Os -mmcu=${DEVICE}
-PORT=/dev/ttyACM0
 BAUD=115200
+
+# change these values accordingly
+FILENAME=blink
+DEVICE=atmega328p
+PORT=/dev/ttyACM0
 
 default:compile upload clean
 
